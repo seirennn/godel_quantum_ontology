@@ -1,0 +1,89 @@
+\section{Theoretical Framework}\label{sec:theory}
+
+\subsection{Quantum Mechanical Foundations}
+\subsubsection{Quantum States and Superposition}
+The fundamental unit of our simulation is the qubit, described by state vector:
+\begin{equation}
+    \ket{\psi} = \alpha\ket{0} + \beta\ket{1}, \quad |\alpha|^2 + |\beta|^2 = 1
+\end{equation}
+
+This superposition principle allows us to represent contingent states as quantum superpositions, where multiple potential states exist simultaneously until measurement.
+
+\subsubsection{Quantum Entanglement}
+Entanglement between qubits represents causal dependencies. For a two-qubit system:
+\begin{equation}
+    \ket{\Psi} = \frac{1}{\sqrt{2}}(\ket{00} + \ket{11})
+\end{equation}
+This Bell state demonstrates perfect correlation, modeling strong causal dependency.
+
+\subsection{Modal Logic Framework}
+\subsubsection{Kripke Semantics}
+We formalize necessity and contingency using Kripke frames $(W, R)$ where:
+\begin{itemize}
+    \item $W$ is a set of possible worlds
+    \item $R \subseteq W \times W$ is an accessibility relation
+\end{itemize}
+
+Modal operators are defined as:
+\begin{align}
+    \Box \phi &\text{ (necessarily } \phi\text{)} \equiv \forall w' (wRw' \rightarrow \phi(w')) \\
+    \Diamond \phi &\text{ (possibly } \phi\text{)} \equiv \exists w' (wRw' \wedge \phi(w'))
+\end{align}
+
+\subsection{Quantum-Modal Correspondence}
+We establish a correspondence between quantum and modal concepts:
+
+\begin{equation}
+    \begin{array}{rcl}
+        \text{Quantum State} & \leftrightarrow & \text{Possible World} \\
+        \text{Superposition} & \leftrightarrow & \text{Modal Possibility} \\
+        \text{Entanglement} & \leftrightarrow & \text{Accessibility Relation} \\
+        \text{Measurement} & \leftrightarrow & \text{Actualization}
+    \end{array}
+\end{equation}
+
+\subsection{Stability Metrics}
+\subsubsection{Quantum Entropy}
+Von Neumann entropy measures quantum uncertainty:
+\begin{equation}
+    S(\rho) = -\text{Tr}(\rho \ln \rho) = -\sum_i \lambda_i \ln \lambda_i
+\end{equation}
+where $\lambda_i$ are eigenvalues of density matrix $\rho$.
+
+\subsubsection{Coherence Measure}
+We quantify quantum coherence using:
+\begin{equation}
+    C(\rho) = \sum_{i\neq j} |\rho_{ij}|
+\end{equation}
+where $\rho_{ij}$ are density matrix elements.
+
+\subsubsection{Dependency Strength}
+Causal dependencies are measured through mutual information:
+\begin{equation}
+    I(A:B) = S(\rho_A) + S(\rho_B) - S(\rho_{AB})
+\end{equation}
+
+\subsection{Necessity Criteria}
+A system requires a necessary being if:
+\begin{equation}
+    \begin{cases}
+        S(\rho) > S_{\text{threshold}} & \text{(high entropy)} \\
+        C(\rho) < C_{\text{threshold}} & \text{(low coherence)} \\
+        I(A:B) > I_{\text{threshold}} & \text{(strong dependencies)}
+    \end{cases}
+\end{equation}
+
+\subsection{Weighted Analysis}
+The overall necessity score is computed as:
+\begin{equation}
+    N = w_E\cdot\frac{S(\rho)}{S_{\text{max}}} + w_C\cdot(1-\frac{C(\rho)}{C_{\text{max}}}) + w_D\cdot\frac{I(A:B)}{I_{\text{max}}}
+\end{equation}
+where $w_E$, $w_C$, and $w_D$ are weight factors summing to 1.
+
+\subsection{Confidence Level}
+Statistical confidence in necessity is calculated as:
+\begin{equation}
+    \text{Confidence} = \min(1, \frac{N}{N_{\text{threshold}}} \cdot 100\%)
+\end{equation}
+
+This theoretical framework provides the mathematical foundation for translating philosophical concepts of contingency and necessity into quantifiable metrics in quantum mechanics.

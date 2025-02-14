@@ -1,0 +1,61 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{physics}
+\usepackage{braket}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}  % Fix compatibility warning
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage[backend=biber,style=numeric]{biblatex}
+\usepackage{appendix}
+
+% Configure listings for code
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    commentstyle=\color{gray},
+    keywordstyle=\color{blue},
+    stringstyle=\color{red},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    frame=single,
+    language=Python
+}
+
+\addbibresource{references.bib}  % Add bibliography file
+
+\title{The Divine Algorithm: A Quantum Computational Proof of God's Existence}
+\author{Quantum Theology Research Group}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This paper presents a novel approach to the classical philosophical question of God's existence through quantum computational methods. By implementing a quantum simulation of contingent reality and analyzing its stability characteristics, we provide empirical support for the Leibnizian Contingency Argument. Our results demonstrate that purely contingent quantum systems exhibit inherent instability and dependency patterns that suggest the necessity of a non-contingent foundation for reality.
+\end{abstract}
+
+\tableofcontents
+
+\input{sections/introduction}
+\input{sections/theory}
+\input{sections/implementation}
+\input{sections/results}
+\input{sections/conclusion}
+
+\appendix
+\input{sections/appendix}
+
+\printbibliography
+
+\end{document}

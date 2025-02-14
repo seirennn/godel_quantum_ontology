@@ -1,0 +1,62 @@
+\appendix
+\section{Mathematical Proofs}\label{sec:appendix}
+
+\subsection{Quantum Mechanics}
+
+\subsubsection{State Evolution}
+The quantum state evolution:
+\begin{equation}
+    \ket{\psi(t)} = U(t)\ket{\psi_0} = e^{-iHt/\hbar}\ket{\psi_0}
+\end{equation}
+
+System Hamiltonian:
+\begin{equation}
+    H = \sum_{i=1}^n h_i + \sum_{i,j} J_{ij}\sigma_i^z\sigma_j^z
+\end{equation}
+
+\subsection{Information Theory}
+
+\subsubsection{Entropy}
+Von Neumann entropy:
+\begin{equation}
+    S(\rho) = -\text{Tr}(\rho\ln\rho) = -\sum_i \lambda_i\ln\lambda_i
+\end{equation}
+
+\subsubsection{Coherence}
+Quantum coherence measure:
+\begin{equation}
+    C(\rho) = \sum_{i\neq j} |\rho_{ij}|
+\end{equation}
+
+\subsection{Modal Logic}
+
+\subsubsection{Necessity}
+Modal necessity operator:
+\begin{equation}
+    \Box P(w) \iff \forall w' \in W(wRw' \rightarrow P(w'))
+\end{equation}
+
+\subsubsection{Quantum-Modal Mapping}
+\begin{equation}
+    \begin{array}{rcl}
+        \ket{\psi} & \leftrightarrow & w \in W \\
+        U\ket{\psi} & \leftrightarrow & wRw' \\
+        \braket{\psi|\psi} = 1 & \leftrightarrow & \text{Accessibility}
+    \end{array}
+\end{equation}
+
+\subsection{Statistical Analysis}
+
+\subsubsection{Confidence}
+For measurements $x_i$:
+\begin{equation}
+    CI = \bar{x} \pm t_{\alpha/2,n-1}\frac{s}{\sqrt{n}}
+\end{equation}
+
+\subsubsection{Probabilities}
+Measurement statistics:
+\begin{equation}
+    p_i = \frac{n_i}{N}, \quad \sigma_{p_i} = \sqrt{\frac{p_i(1-p_i)}{N}}
+\end{equation}
+
+These mathematical foundations underpin the quantum computational proof of necessary being presented in this paper.
