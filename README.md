@@ -49,8 +49,8 @@ requirements.txt      # Project dependencies
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/divine-algorithm.git
-cd divine-algorithm
+git clone https://github.com/seirennn/godel_quantum_ontology.git
+cd godel_quantum_ontology
 ```
 
 2. Create a virtual environment (recommended):
@@ -102,7 +102,7 @@ The simulation will generate visualizations and analysis in the `results` direct
 
 ## Theory and Approach
 
-The Divine Algorithm explores the fundamental question of reality's dependency on a necessary being through several key steps:
+The Ontological Necessity and Transcendental Computability explores the fundamental question of reality's dependency on a necessary being through several key steps:
 
 1. **Quantum Simulation of Contingency**
    - Creates quantum networks representing causal dependencies
